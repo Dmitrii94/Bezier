@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div id="work_field"></div>
+    <div id="about" onclick="hide()">
+        <p>
+            Данное приложение созданно для последловательного рисования кривых Безье по контрольным точкам.<br><br>
+            Основа: Pixi.js  подключена через CDN<br><br>
+            Основной код был написан на ES6 c использованием синтаксиса классов. Было принято писать именно так, так как предполагалось, что в приложении могут быть управляющие элементы, а значит и соответствующие им методы.
+        </p>
+        <p>НАЧАТЬ РАБОТУ</p>
+        <p>просто щелкайте по экрану</p>
+    </div>
+</body>
+<script>
+    var hide = function(){
+        document.getElementById('about').style.display = 'none';
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.1/pixi.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
